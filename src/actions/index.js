@@ -4,8 +4,6 @@ export const saveUserEmail = (email) => ({
   payload: email,
 });
 
-// export const requestAPI = () => ({ type: REQUEST_API });
-
 export const addCurrency = (currencies) => ({
   type: 'ADD_CURRENCY',
   payload: currencies,
@@ -15,6 +13,21 @@ export const addExpense = (expenses) => ({
   type: 'ADD_EXPENSE',
   payload: expenses,
 });
+
+export function fetchExpenses(state) { // esse state vem lá da form
+  return async (dispatch) => {
+    try {
+      const response = await fetch('https://economia.awesomeapi.com.br/json/all');
+      const data = await response.json();
+      // console.log(state);
+      state.exchangeRates = data;
+      // console.log(state);
+      dispatch(addExpense(state));
+    } catch (error) {
+      console.log('erro requisição expenses');
+    }
+  };
+}
 
 export function fetchAPI() {
   return async (dispatch) => {
