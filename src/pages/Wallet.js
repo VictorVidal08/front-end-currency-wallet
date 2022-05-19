@@ -34,9 +34,9 @@ class Wallet extends React.Component {
             />
           </label>
           <label htmlFor="currency">
-            Moeda:
+            moeda
             <select
-              name="currency"
+              id="currency"
             >
               { currenciesArray.map((currency, key) => (
                 <option key={ key }>{ currency }</option>
