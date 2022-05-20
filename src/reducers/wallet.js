@@ -10,6 +10,12 @@ const wallet = (state = INITIAL_STATE, action) => {
     return { ...state, currencies: action.payload };
   case 'ADD_EXPENSE':
     return { ...state, expenses: [...state.expenses, action.payload] };
+  case 'RM_EXPENSE':
+    return { ...state,
+      expenses:
+        state.expenses.filter((expense) => Number(expense.id)
+        !== Number(action.payload)) };
+    // Number necessário para a comparação das variáveis ser compatível (number e string por ex...)
   default:
     return state;
   }

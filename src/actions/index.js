@@ -14,6 +14,11 @@ export const addExpense = (expenses) => ({
   payload: expenses,
 });
 
+export const removeExpense = (id) => ({
+  type: 'RM_EXPENSE',
+  payload: id,
+});
+
 export function fetchExpenses(state) { // esse state vem lá da form
   return async (dispatch) => {
     try {
