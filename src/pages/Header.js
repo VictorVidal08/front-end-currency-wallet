@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import '../header.css';
 
 class Header extends Component {
   render() {
@@ -17,8 +18,7 @@ class Header extends Component {
     });
     // ref Object.entries https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
     return (
-      <div>
-        Header
+      <div className="cabecalho">
         <h2
           data-testid="email-field"
         >

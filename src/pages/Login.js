@@ -41,7 +41,7 @@ class Login extends React.Component {
     const { email, password, isDisabled } = this.state;
     return (
       <div>
-        Login
+        <h2>Login</h2>
         <form>
           <label htmlFor="email">
             Insira seu Email:

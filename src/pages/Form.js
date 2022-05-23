@@ -39,7 +39,6 @@ class Form extends Component {
     const { currenciesArray } = this.props;
     return (
       <div>
-        Form
         <form>
           <label htmlFor="value">
             Valor Despesa:

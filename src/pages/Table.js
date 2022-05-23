@@ -15,7 +15,6 @@ class Table extends Component {
     console.log(expenses);
     return (
       <div>
-        Table
         <table>
           <thead>
             <tr>
