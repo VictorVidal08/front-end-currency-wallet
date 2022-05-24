@@ -12,7 +12,7 @@ class Table extends Component {
 
   render() {
     const { expenses } = this.props;
-    console.log(expenses);
+    // console.log(expenses);
     return (
       <div>
         <table>
@@ -57,6 +57,14 @@ class Table extends Component {
                   >
                     Excluir
                   </button>
+                  {/* <button
+                    type="button"
+                    value={ expense.id }
+                    data-testid="edit-btn"
+                    onClick={ this.handleEditBtn }
+                  >
+                    Editar
+                  </button> */}
                 </td>
               </tr>)) }
           </tbody>
