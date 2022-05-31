@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchExpenses } from '../actions';
+import '../form.css';
 
 class Form extends Component {
   constructor() {
@@ -39,28 +40,31 @@ class Form extends Component {
     const { currenciesArray } = this.props;
     return (
       <div>
-        <form>
-          <label htmlFor="value">
-            Valor Despesa:
-            <input
-              type="text"
-              name="value"
-              value={ value }
-              onChange={ this.handleChange }
-              data-testid="value-input"
-            />
-          </label>
-          <label htmlFor="description">
-            Descrição despesa:
-            <input
-              type="text"
-              name="description"
-              value={ description }
-              data-testid="description-input"
-              onChange={ this.handleChange }
-            />
-          </label>
-          <label htmlFor="currency">
+        <form className="formContainer">
+          <div className="inputsContainer">
+            <label htmlFor="value" className="labelForms">
+              Valor Despesa:
+              <input
+                type="text"
+                name="value"
+                value={ value }
+                onChange={ this.handleChange }
+                data-testid="value-input"
+              />
+            </label>
+            <label htmlFor="description" className="labelForms">
+              Descrição despesa:
+              <input
+                type="text"
+                name="description"
+                value={ description }
+                data-testid="description-input"
+                onChange={ this.handleChange }
+              />
+            </label>
+          </div>
+
+          <label htmlFor="currency" className="labelForms">
             moeda
             <select
               id="currency"
@@ -73,7 +77,7 @@ class Form extends Component {
               ))}
             </select>
           </label>
-          <label htmlFor="method">
+          <label htmlFor="method" className="labelForms">
             Método de pagamento:
             <select
               id="method"
@@ -87,7 +91,7 @@ class Form extends Component {
               <option value="Cartão de débito">Cartão de débito</option>
             </select>
           </label>
-          <label htmlFor="tag">
+          <label htmlFor="tag" className="labelForms">
             Categoria:
             <select
               id="tag"

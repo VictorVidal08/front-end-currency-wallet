@@ -25,16 +25,18 @@ class Header extends Component {
           Email:
           { userEmail }
         </h2>
-        <h2
-          data-testid="total-field"
-        >
-          { total.toFixed(2) }
-        </h2>
-        <h2
-          data-testid="header-currency-field"
-        >
-          BRL
-        </h2>
+        <div className="value-Container">
+          <h2
+            data-testid="total-field"
+          >
+            { total.toFixed(2) }
+          </h2>
+          <h2
+            data-testid="header-currency-field"
+          >
+            BRL
+          </h2>
+        </div>
       </div>
     );
   }

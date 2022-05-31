@@ -1,0 +1,23 @@
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formContainer input {
+  width: 60%;
+}
+
+.inputsContainer {
+  display: flex;
+}
+
+.labelForms {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+} 
+
+/* n funcionou o forms com os itens um do lado do outro... */

@@ -1,4 +1,11 @@
 .cabecalho { 
-  background-color: rgb(147, 197, 143);
+  background-color: #55efc4;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.value-Container {
+  margin-left: 30%;
   display: flex;
 }

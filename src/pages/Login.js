@@ -40,38 +40,44 @@ class Login extends React.Component {
   render() {
     const { email, password, isDisabled } = this.state;
     return (
-      <div>
-        <h2>Login</h2>
-        <form>
-          <label htmlFor="email">
-            Insira seu Email:
-            <input
-              type="email"
-              name="email"
-              data-testid="email-input"
-              onChange={ this.handleChange }
-              value={ email }
-            />
-          </label>
-          <label htmlFor="password">
-            Insira sua senha:
-            <input
-              type="password"
-              name="password"
-              data-testid="password-input"
-              onChange={ this.handleChange }
-              value={ password }
-            />
-          </label>
-          <button
-            type="button"
-            onClick={ this.handleButton }
-            disabled={ isDisabled }
-          >
-            Entrar
-          </button>
-        </form>
-      </div>);
+      <div className="main-div">
+        <div className="div-container">
+          <form className="formClass">
+            <h2 className="loginTitle">Login</h2>
+            <label htmlFor="email" className="labelClass">
+              Insira seu Email:
+              <input
+                className="inputClass"
+                type="email"
+                name="email"
+                data-testid="email-input"
+                onChange={ this.handleChange }
+                value={ email }
+              />
+            </label>
+            <label htmlFor="password" className="labelClass">
+              Insira sua senha:
+              <input
+                className="inputClass"
+                type="password"
+                name="password"
+                data-testid="password-input"
+                onChange={ this.handleChange }
+                value={ password }
+              />
+            </label>
+            <button
+              type="button"
+              onClick={ this.handleButton }
+              disabled={ isDisabled }
+            >
+              Entrar
+            </button>
+          </form>
+        </div>
+
+      </div>
+    );
   }
 }
 

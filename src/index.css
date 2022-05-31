@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(206, 251, 194, 0.712);
+  background-color: rgb(199, 241, 212);
+}
+
+.bitImage {
+  opacity: 30%;
 }
 
 button {
@@ -17,13 +21,65 @@ button {
   padding: 5px 20px;
 }
 
+.main-div {
+  background-color: beige;
+  height: 93vh;
+  width: 100%;
+}
+
+.div-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/backgroundBitcoin.png");
+  height: 100%;
+}
+
+.loginTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.formClass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  width: 350px;
+  height: 350px;
+  background-color: azure;
+}
+
+.helloClass {
+  background-color: #00b894;
+  color: azure;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  padding: 3%;
+}
+
+.labelClass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.labelClass input {
+  background-color: rgb(252, 251, 236);
+  width: 90%;
+}
+
 input {
   border-radius: 5px;
   margin: 5px;
   padding: 5px 10px;
-  width: 80%;
+  width: 50%;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
