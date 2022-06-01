@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeExpense } from '../actions';
+import '../table.css';
 
 class Table extends Component {
   handleDeleteBtn = ({ target }) => {
@@ -14,8 +15,8 @@ class Table extends Component {
     const { expenses } = this.props;
     // console.log(expenses);
     return (
-      <div>
-        <table>
+      <div className="tableContainer">
+        <table className="table-content">
           <thead>
             <tr>
               <th>Descrição</th>

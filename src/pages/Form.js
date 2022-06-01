@@ -65,7 +65,7 @@ class Form extends Component {
           </div>
 
           <label htmlFor="currency" className="labelForms">
-            moeda
+            Moeda:
             <select
               id="currency"
               name="currency"
