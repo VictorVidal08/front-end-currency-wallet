@@ -7,7 +7,11 @@ import './index.css';
 function App() {
   return (
     <div>
-      <h1 className="helloClass">Hello, TrybeWallet!</h1>
+      <div className="titleContainer">
+        <img src="./dollar-sign.png" alt="dollarSign" className="moneyImg" />
+        <h1 className="helloClass">Currency Wallet!</h1>
+        <img src="./money-bag.png" alt="moneyBag" className="moneyImg" />
+      </div>
       <Switch>
         <Route exact path="/" component={ Login } />
         <Route exact path="/carteira" component={ Wallet } />

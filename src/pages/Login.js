@@ -32,10 +32,8 @@ class Login extends React.Component {
       this.setState({
         isDisabled: !(emailTest.test(email) && password.length >= passwordTest),
       });
-      // validação com apoio do Takahashi
     });
   }
-  // ref regex: https://pt.stackoverflow.com/questions/1386/express%C3%A3o-regular-para-valida%C3%A7%C3%A3o-de-e-mail
 
   render() {
     const { email, password, isDisabled } = this.state;
