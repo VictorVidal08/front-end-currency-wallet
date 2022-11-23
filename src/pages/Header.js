@@ -7,16 +7,12 @@ class Header extends Component {
   render() {
     const { userEmail, expenses } = this.props;
     let total = 0;
-    // console.log(expenses);
     expenses.forEach((element) => {
-      // console.log(element);
       const coins = Object.entries(element.exchangeRates);
-      // console.log(coins);
       const conversion = coins.find((coin) => (coin[0] === element.currency));
-      // console.log(conversion[1].ask);
-      total += ((Number(element.value)) * (Number(conversion[1].ask))); // multiplica pelo coeficiente asf para converter para BRL
+      total += ((Number(element.value)) * (Number(conversion[1].ask)));
     });
-    // ref Object.entries https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
+
     return (
       <div className="cabecalho">
         <h2

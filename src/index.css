@@ -8,6 +8,17 @@ body {
   background-color: rgb(199, 241, 212);
 }
 
+.titleContainer {
+  background-color: #04725c;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.moneyImg {
+  height: 5%;
+  width: 5%;
+}
+
 .bitImage {
   opacity: 30%;
 }
@@ -23,7 +34,7 @@ button {
 
 .main-div {
   background-color: beige;
-  height: 93vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -39,7 +50,8 @@ button {
 .loginTitle {
   display: flex;
   justify-content: center;
-  font-size: 48px;
+  font-size: 50px;
+  color: aliceblue;
 }
 
 .formClass {
@@ -50,23 +62,28 @@ button {
   border-radius: 10%;
   width: 350px;
   height: 350px;
-  background-color: azure;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.);
 }
 
 .helloClass {
-  background-color: #00b894;
+  
   color: azure;
-  font-size: 50px;
+  font-size: 3.5rem;
   display: flex;
   justify-content: center;
   margin: 0%;
-  padding: 3%;
+  padding: 0;
 }
 
 .labelClass {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: aliceblue;
 }
 
 .labelClass input {

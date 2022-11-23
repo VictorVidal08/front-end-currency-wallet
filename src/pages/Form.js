@@ -30,9 +30,8 @@ class Form extends Component {
     this.setState((prevState) => ({
       id: prevState.id + 1,
       value: '',
-      description: '', // remove o valor dos campos
+      description: '',
     }));
-    // console.log(this.state);
   }
 
   render() {
